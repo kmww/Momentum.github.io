@@ -1,0 +1,8 @@
+.hidden{
+    display:none;
+} /* element 를 숨겨줌*/
+
+
+body{
+    background-color: beige;
+}
