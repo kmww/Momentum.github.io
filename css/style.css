@@ -1,8 +1,141 @@
-.hidden{
-    display:none;
-} /* element 를 숨겨줌*/
+/* COMMON */
+.hidden {
+  display: none;
+}
+
+body {
+  font-size: 25px;
+  color: #fff;
+  font-family: 'Nanum Gothic', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+.inner {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* LOGIN FORM */
 
 
-body{
-    background-color: beige;
+.login-form .inner {
+  width: 100%;
+  position: absolute;
+  top: 500px;
+  padding: 0 0 0 25px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.login-form input {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #fff;
+  text-align: center;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.login-form input::placeholder {
+  color: #fff;
+}
+
+.login-form input:focus {
+  outline: none;
+}
+
+.login-form button {
+  font-size: 40px;
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+}
+
+.GREETING .inner {
+  width: 100%;
+  position: absolute;
+  top: 500px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.inner #clock {
+  display: flex;
+  justify-content: center;
+  font-size: 150px;
+  margin-top: 300px;
+}
+
+.TODO .inner {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 150px;
+}
+
+.TODO input {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.TODO input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.TODO input:focus {
+  outline: none;
+}
+
+.TODO .todo-form {
+  position: absolute;
+  width: 100%;
+
+}
+
+#todo-list {
+  position: absolute;
+  width: 300px;
+  top: 650px;
+  right: 50%;
+  margin-right: calc(-300px / 2);
+}
+
+#todo-list li button {
+  position: absolute;
+  right: 0;
+}
+
+#quotes {
+  display: flex;
+  width: 600px;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+}
+
+#weather {
+  display: flex;
+  width: 120px;
+  font-size: 15px;
+  font-weight: 700;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
